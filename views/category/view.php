@@ -94,12 +94,11 @@ use yii\helpers\Html;
                         <h2>Здесь товаров пока нет...</h2>
                     <?php endif;?>
                     <div class="clearfix"></div>
-                    <ul class="pagination">
-                        <li class="active"><a href="">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li><a href="">&raquo;</a></li>
-                    </ul>
+                    <?php
+                    echo \yii\widgets\LinkPager::widget([
+                        'pagination' => $pages,
+                    ]);
+                    ?>
                 </div><!--features_items-->
             </div>
         </div>
