@@ -84,12 +84,12 @@ $this->title = 'My Yii Application';
                         <div class="brands-name">
                             <ul class="nav nav-pills nav-stacked">
                                 <li><a href="#"> <span class="pull-right">(50)</span>Acne</a></li>
-                                <li><a href="#"> <span class="pull-right">(56)</span>GrГјne Erde</a></li>
+                                <li><a href="#"> <span class="pull-right">(56)</span>Grüne Erde</a></li>
                                 <li><a href="#"> <span class="pull-right">(27)</span>Albiro</a></li>
                                 <li><a href="#"> <span class="pull-right">(32)</span>Ronhill</a></li>
                                 <li><a href="#"> <span class="pull-right">(5)</span>Oddmolly</a></li>
                                 <li><a href="#"> <span class="pull-right">(9)</span>Boudestijn</a></li>
-                                <li><a href="#"> <span class="pull-right">(4)</span>RГ¶sch creative culture</a></li>
+                                <li><a href="#"> <span class="pull-right">(4)</span>Rösch creative culture</a></li>
                             </ul>
                         </div>
                     </div><!--/brands_products-->
@@ -124,17 +124,17 @@ $this->title = 'My Yii Application';
                                             <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                         </div>
                                         <!--<div class="product-overlay">
-                                            <div class="overlay-content">
-                                                <h2>$<?//= $hit->price?></h2>
-                                                <p><?//= $hit->name?></p>
-                                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-                                            </div>
-                                        </div>-->
+                    <div class="overlay-content">
+                        <h2>$<?/*= $hit->price*/?></h2>
+                        <p><?/*= $hit->name*/?></p>
+                        <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                    </div>
+                </div>-->
                                         <?php if($hit->new): ?>
-                                            <?= Html::img("@web/images/home/new.png", ['alt' => 'РќРѕРІРёРЅРєР°', 'class' => 'new'])?>
+                                            <?= Html::img("@web/images/home/new.png", ['alt' => 'Новинка', 'class' => 'new'])?>
                                         <?php endif?>
                                         <?php if($hit->sale): ?>
-                                            <?= Html::img("@web/images/home/sale.png", ['alt' => 'Р Р°СЃРїСЂРѕРґР°Р¶Р°', 'class' => 'new'])?>
+                                            <?= Html::img("@web/images/home/sale.png", ['alt' => 'Распродажа', 'class' => 'new'])?>
                                         <?php endif?>
                                     </div>
                                     <div class="choose">
