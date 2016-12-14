@@ -23,6 +23,9 @@ class CategoryController extends AppController
 
     public function actionView($id){
         $category = Category::findOne($id);
+        if(empty($category))
+            throw new \yii\web\HttpException(404, 'Такой категории нет');
+
         $this->setMeta('E-SHOPPER | ' . $category->name, $category->keywords, $category->description);
         $id = Yii::$app->request->get('id');
         // $products = Product::find()->where(['category_id' => $id])->all();
